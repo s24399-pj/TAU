@@ -32,4 +32,4 @@ jobs:
 
       - name: Build and Test
         run: |
-          python -m compileall . || exit 1
+          python -m unittest discover -s tests -p "test_*.py"
